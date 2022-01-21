@@ -34,16 +34,16 @@
     <!-- <link rel="stylesheet" href="./VietZipStore/css-js/vzs-css-isLayoutMode.css" integrity="sha384" crossorigin="anonymous"> -->
     <!-- css add -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/icon.css" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/icon.js" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/flat-icon-support.css" integrity="sha384" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/list-footer-fixed.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/icon.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/icon.js" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/flat-icon-support.css" integrity="sha384" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/list-footer-fixed.css" integrity="sha384" crossorigin="anonymous">
     
     
     <!--====Lên Đầu Trang===================================================================================  -->
         <button onclick="topFunction()" id="myBtn" title="Go to top">Lên Đầu Trang</button>
-        <link href='https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/go-to-top.css' rel='stylesheet' />
-        <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/go-to-top.js"></script>
+        <link href='https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/go-to-top.css' rel='stylesheet' />
+        <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/go-to-top.js"></script>
         <!--====Lên Đầu Trang===================================================================================  -->
 
     
@@ -1122,7 +1122,7 @@ var t=e(this);t.next("ul").removeClass("is-hidden").end().parent(".has-children"
 //=========
 var t=e(".modernshop-menu").hasClass("open-to-left")?"left":"right";e(".modernshop-dropdown").menuAim({activate:function(n){e(n).children().addClass("is-active").removeClass("fade-out"),0==e(".modernshop-dropdown .fade-in").length&&e(n).children("ul").addClass("fade-in")},deactivate:function(n){e(n).children().removeClass("is-active"),(0==e("li.has-children:hover").length||e("li.has-children:hover").is(e(n)))&&(e(".modernshop-dropdown").find(".fade-in").removeClass("fade-in"),e(n).children("ul").addClass("fade-out"))},exitMenu:function(){return e(".modernshop-dropdown").find(".is-active").removeClass("is-active"),!0},submenuDirection:t}),e(".go-back").on("click",function(){var n=e(this);e(this).parent("ul").parent(".has-children").parent("ul");n.parent("ul").addClass("is-hidden").parent(".has-children").parent("ul").removeClass("move-out")}),(e("[placeholder]").focus(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")}).blur(function(){var n=e(this);""!=n.val()&&n.val()!=n.attr("placeholder")||n.val(n.attr("placeholder"))}).blur(),e("[placeholder]").parents("form").submit(function(){e(this).find("[placeholder]").each(function(){var n=e(this);n.val()==n.attr("placeholder")&&n.val("")})}))}),function(e){
 function n(n){var t=e(this),o=null,i=[],r=null,a=null,l=e.extend({rowSelector:"> li",submenuSelector:"*",submenuDirection:"right",tolerance:75,enter:e.noop,exit:e.noop,activate:e.noop,deactivate:e.noop,exitMenu:e.noop},n),s=3,u=300,c=function(e){i.push({x:e.pageX,y:e.pageY}),i.length>s&&i.shift()},d=function(){a&&clearTimeout(a),l.exitMenu(this)&&(o&&l.deactivate(o),o=null)},h=function(){a&&clearTimeout(a),l.enter(this),m(this)},f=function(){l.exit(this)},v=function(){p(this)},p=function(e){e!=o&&(o&&l.deactivate(o),l.activate(e),o=e)},m=function(e){var n=x();n?a=setTimeout(function(){m(e)},n):p(e)},x=function(){
-function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("Decamber 31, 2021 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
+function n(e,n){return(n.y-e.y)/(n.x-e.x)}if(!o||!e(o).is(l.submenuSelector))return 0;var a=t.offset(),s={x:a.left,y:a.top-l.tolerance},c={x:a.left+t.outerWidth(),y:s.y},d={x:a.left,y:a.top+t.outerHeight()+l.tolerance},h={x:a.left+t.outerWidth(),y:d.y},f=i[i.length-1],v=i[0];if(!f)return 0;if(v||(v=f),v.x<a.left||v.x>h.x||v.y<a.top||v.y>h.y)return 0;if(r&&f.x==r.x&&f.y==r.y)return 0;var p=c,m=h;"left"==l.submenuDirection?(p=d,m=s):"below"==l.submenuDirection?(p=h,m=d):"above"==l.submenuDirection&&(p=s,m=c);var x=n(f,p),g=n(f,m),C=n(v,p),y=n(v,m);return C>x&&g>y?(r=f,u):(r=null,0)};t.mouseleave(d).find(l.rowSelector).mouseenter(h).mouseleave(f).click(v),e(document).mousemove(c)}e.fn.menuAim=function(e){return this.each(function(){n.call(this,e)}),this}}(jQuery);function countdown() {var e = new Date("Decamber 31, 2022 24:00:00"),t=(new Date).getTime(),o = e - t,l = setInterval(function(){o -= 1e3;var e=Math.floor(o / 864e5),t=Math.floor(o % 864e5 / 36e5),n=Math.floor(o % 36e5 / 6e4),a=Math.floor(o / 1e3 % 60);$(".days").html(e),$(".hours").html(("0" + t).slice(-2)),$(".minutes").html(("0" + n).slice(-2)), $(".seconds").html(("0" + a).slice(-2)), 0 > o && clearInterval(l)}, 1e3)}countdown();$(".button").click(function(){$(".flash").addClass("animate--drop-in-fade-out"),setTimeout(function(){$(".flash").removeClass("animate--drop-in-fade-out")},2500)});
 
 //Sp
 ! function(t, e) {
@@ -2866,9 +2866,9 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
  
     <!--  =========logo=============================== -->
     <b:section class='header' id='header' maxwidgets='2'>
-      <b:widget id='Header1' locked='true' title='Camping Đà Lạt - Dịch Vụ Cắm Trại Đà Lạt, Cho Thuê Lều Cắm Trại,... (Tiêu đề)' type='Header' version='2' visible='true'>
+      <b:widget id='Header1' locked='true' title='Camping Today - Dịch Vụ Cắm Trại, Cho Thuê Lều Cắm Trại,... (Tiêu đề)' type='Header' version='2' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='displayUrl'>https://github.com/luongthehien93/campingdalat/blob/main/img/logo/campingdalat_logo_qr_web_cs6_png.png?raw=true</b:widget-setting>
+          <b:widget-setting name='displayUrl'>https://github.com/luongthehien93/campingtoday/blob/main/img/logo/campingtoday_logo_qr_web_png.png?raw=true</b:widget-setting>
           <b:widget-setting name='displayHeight'>601</b:widget-setting>
           <b:widget-setting name='sectionWidth'>424</b:widget-setting>
           <b:widget-setting name='useImage'>true</b:widget-setting>
@@ -2924,14 +2924,14 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     <b:section id='menu' maxwidgets='1'>
       <b:widget id='LinkList1' locked='true' title='top bar' type='LinkList' version='2' visible='true'>
         <b:widget-settings>
-          <b:widget-setting name='link-3'>/p/du-an.html</b:widget-setting>
+          <b:widget-setting name='link-3'>/p/check-in.html</b:widget-setting>
           <b:widget-setting name='sorting'>NONE</b:widget-setting>
           <b:widget-setting name='link-4'>/p/thong-tin-lien-he.html</b:widget-setting>
           <b:widget-setting name='text-1'><![CDATA[DỊCH VỤ & SẢN PHẨM ]]></b:widget-setting>
           <b:widget-setting name='link-1'>/search/lable/all-dvsp.html</b:widget-setting>
           <b:widget-setting name='text-0'>TRANG CHỦ</b:widget-setting>
           <b:widget-setting name='link-2'>/search/lable/file.html</b:widget-setting>
-          <b:widget-setting name='text-3'>DỰ ÁN</b:widget-setting>
+          <b:widget-setting name='text-3'>CHECK-IN</b:widget-setting>
           <b:widget-setting name='link-0'>/</b:widget-setting>
           <b:widget-setting name='text-2'><![CDATA[TIN TỨC &#38; KHUYẾN MÃI  <span class='hot'>Hot</span>]]></b:widget-setting>
           <b:widget-setting name='text-4'><![CDATA[THÔNG TIN & LIÊN HỆ]]></b:widget-setting>
@@ -2980,21 +2980,21 @@ Tư Vấn </a>
           </div>
 
           <div class='chat-doc-info'>
-            <!-- <a href='http://www.messenger.com/t/vietzipstore'> -->
-            <a href='http://www.messenger.com/t/campingtodayhcm'>
+            <!-- <a href='http://www.messenger.com/t/Campdalat'> -->
+            <a href='http://www.messenger.com/t/Campdalat'>
               <div class='chat-img'>
                 <img alt='' src='https://drive.google.com/uc?id=11yVxy4t6P7tclBHOy6NnNyluZtdUWBZW'/>
                 <span class='doctor-online'/>
               </div>
               <div class='chat-deskript'>
                 <span class='chat-name'>Facebook Chat</span>
-                <p>vietzipstore</p>
+                <p>Camping Today</p>
               </div>
             </a>
           </div>
           <!--  -->
           <div class='chat-doc-info'>
-            <a href='http://zalo.me/luongthehien93'>
+            <a href='http://zalo.me/0932022059'>
               <div class='chat-img'>
                 <img alt='' src='https://drive.google.com/uc?id=11qeezUt0coAXJGs1FZ8sr6V8UL5hmeQ7'/>
                 <span class='doctor-online'/>
@@ -3015,7 +3015,7 @@ Tư Vấn </a>
               </div>
               <div class='chat-deskript'>
                 <span class='chat-name'>Zip Chat</span>
-                <p>vietzipstore</p>
+                <p>Camping Today</p>
               </div>
             </a>
           </div>
@@ -3053,33 +3053,33 @@ Tư Vấn </a>
         <!--  -->
         
         <li class='has-children'>
-            <a href='#'>1. THI CÔNG LẮP ĐẶT</a>
+            <a href='#'>1. Lều cắm trại, túi ngủ,...</a>
             <ul class='modernshop-sb-dropdown is-hidden'>
               <li class='go-back'>
-                <a href='javascript:void(0);'>1. THI CÔNG LẮP ĐẶT</a>
+                <a href='javascript:void(0);'>1. Lều cắm trại, túi ngủ,...</a>
               </li>
               <li class='has-children'>
-                <a href='#'>1. THI CÔNG LẮP ĐẶT</a>
+                <a href='#'>1. Lều cắm trại, túi ngủ,...</a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>1. THI CÔNG LẮP ĐẶT</a>
+                    <a href='javascript:void(0);'>1. Lều cắm trại, túi ngủ,...</a>
                   </li>
                   <li>
-                    <a href='#'>1.1 Thi công hệ thống điện nhẹ, internet, wifi, camera,...</a>
+                    <a href='#'>1.1 Lều 02 người:</a>
                   </li>
                   <li>
-                    <a href='#'>1.2 Thi công hệ thống điện thông minh</a>
+                    <a href='#'>1.2 Lều 04 người:</a>
                   </li>
                   <li>
-                    <a href='#'>1.3 Thi công trạm sạc điện, nguồn chuyển đổi AC//DC, nguồn điện dự phòng,...</a>
-                  </li>
-                  
-                  <li>
-                    <a href='#'>1.4 Thi công hệ thống điện năng lượng sạch</a>
+                    <a href='#'>1.3 Lều 05 người:</a>
                   </li>
                   
                   <li>
-                    <a href='#'>1.5 Thi công xây dựng khác/ Construct Adv</a>
+                    <a href='#'>1.4 Lều 06 người:</a>
+                  </li>
+                  
+                  <li>
+                    <a href='#'>1.5 Lều vệ sinh, thay đồ</a>
                   </li>
                   
                   
@@ -3122,33 +3122,70 @@ Tư Vấn </a>
  <!--  -->
         
         <li class='has-children'>
-            <a href='#'>2. DỊCH VỤ CÔNG NGHỆ</a>
+            <a href='#'>2. Bàn, ghế cắm trại,...</a>
             <ul class='modernshop-sb-dropdown is-hidden'>
               <li class='go-back'>
-                <a href='javascript:void(0);'>2. DỊCH VỤ CÔNG NGHỆ</a>
+                <a href='javascript:void(0);'>2. Bàn, ghế cắm trại,...</a>
               </li>
               <li class='has-children'>
-                <a href='#'>2. DỊCH VỤ CÔNG NGHỆ</a>
+                <a href='#'>2. Bàn, ghế cắm trại,...</a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>2. DỊCH VỤ CÔNG NGHỆ</a>
+                    <a href='javascript:void(0);'>2. Bàn, ghế cắm trại,...</a>
                   </li>
                   <li>
-                    <a href='#'>2.1 Dịch vụ Website/ Application</a>
+                    <a href='#'>2.1 Bàn sếp nhôm</a>
                   </li>
                   <li>
-                    <a href='#'>2.2 Domain/Hosting/Server/SSL giá rẻ</a>
-                  </li>
-                  <li>
-                    <a href='#'>2.3 Dịch vụ Digital Marketing</a>
+                    <a href='#'>2.2 Ghế xếp trekking</a>
                   </li>
                   
+                  
+                </ul>
+              </li>
+            </ul>
+          </li>
+        
+        
+ <!-- //========================================================================= -->
+  <!--//==========================================================================================  -->
+ <!--  -->
+        
+        <li class='has-children'>
+            <a href='#'>3. Dụng cụ bếp, nấu ăn,...</a>
+            <ul class='modernshop-sb-dropdown is-hidden'>
+              <li class='go-back'>
+                <a href='javascript:void(0);'>3. Dụng cụ bếp, nấu ăn,...</a>
+              </li>
+              <li class='has-children'>
+                <a href='#'>3.1 Bếp</a>
+                <ul class='is-hidden'>
+                  <li class='go-back'>
+                    <a href='javascript:void(0);'>3.1 Bếp</a>
+                  </li>
                   <li>
-                    <a href='#'>2.4 Dịch vụ Google/ Youtube/ Maps/ Facebook/...</a>
+                    <a href='#'>Bếp Nướng</a>
+                  </li>
+                  <li>
+                    <a href='#'>Bếp cồn </a>
                   </li>
                   
+                  
+                </ul>
+                
+                <a href='#'>3.2 Nấu ăn, thực đơn</a>
+                <ul class='is-hidden'>
+                  <li class='go-back'>
+                    <a href='javascript:void(0);'>3.2 Nấu ăn, thực đơn</a>
+                  </li>
                   <li>
-                    <a href='#'>2.5 Cài Win dạo và sửa ống nước miễn phí</a>
+                    <a href='#'>Gà nướng </a>
+                  </li>
+                  <li>
+                    <a href='#'>Sườn nướng</a>
+                  </li>
+                  <li>
+                    <a href='#'>Rau củ quả  nướng (thêm) </a>
                   </li>
                   
                   
@@ -3161,161 +3198,45 @@ Tư Vấn </a>
  <!-- //========================================================================= -->
          
 
-          <li class='has-children'>
-            <a href='#'>3. SẢN PHẨM ĐIỆN TỬ</a>
-            <ul class='modernshop-sb-dropdown is-hidden'>
-              <li class='go-back'>
-                <a href='javascript:void(0);'>3. SẢN PHẨM ĐIỆN TỬ</a>
-              </li>
 
-              <li class='has-children'>
-                <a href='#'>3.1 CAMERA</a>
-                <ul class='is-hidden'>
-                  <li class='go-back'>
-                    <a href='javascript:void(0);'>3.1 CAMERA</a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA TRONG NHÀ </a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA NGOÀI TRỜI  </a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA HIKVISION </a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA EZVIZ </a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA DAHUA </a>
-                  </li>
-                  <li>
-                    <a href='#'>CAMERA IMOU </a>
-                  </li>
-                  
-                  <li>
-                    <a href='#'>CAMERA YOOSEE</a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class='has-children'>
-                <a href='#'>3.2 THIẾT BỊ ĐIỆN</a>
-                <ul class='is-hidden'>
-                  <li class='go-back'>
-                    <a href='javascript:void(0);'>3.2 THIẾT BỊ ĐIỆN</a>
-                  </li>
-                  <li>
-                    <a href='#'>BỘ ĐIỀU KHIỂN </a>
-                  </li>
-                  <li>
-                    <a href='#'>THIẾT BỊ CẢM BIẾN </a>
-                  </li>
-                  <li>
-                    <a href='#'>THIẾT BỊ KHÁC </a>
-                  </li>
-
-                </ul>
-              </li>
-
-
-              <li class='has-children'>
-                <a href='#'>3.3 MÁY TÍNH VÀ PHỤ KIỆN</a>
-                <ul class='is-hidden'>
-                  <li class='go-back'>
-                    <a href='javascript:void(0);'>3.3 MÁY TÍNH VÀ PHỤ KIỆN</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.3.1 LAPTOP </a>
-                  </li>
-                  <li>
-                    <a href='#'>3.3.2 MÁY TÍNH</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.3.3 PHỤ KIỆN MÁY TÍNH</a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class='has-children'>
-                <a href='#'>3.4 ĐIỆN THOẠI VÀ PHỤ KIỆN</a>
-                <ul class='is-hidden'>
-                  <li class='go-back'>
-                    <a href='javascript:void(0);'>3.4 ĐIỆN THOẠI VÀ PHỤ KIỆN</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.4.1 ĐIỆN THOẠI</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.4.2 ĐIỆN THOẠI CỦ GIÁ RẺ</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.4.3 PHỤ KIỆN ĐIỆN THOẠI</a>
-                  </li>
-
-                </ul>
-              </li>
-
-              <li class='has-children'>
-                <a href='#'>3.5 LINH KIỆN ĐIỆN TỬ</a>
-                <ul class='is-hidden'>
-                  <li class='go-back'>
-                    <a href='javascript:void(0);'>3.5 LINH KIỆN ĐIỆN TỬ</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.5.1 PIN</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.5.2 ẮC QUY</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.5.3 BỘ CHUYỂN ĐỔI NGUỒN ĐIỆN</a>
-                  </li>
-                  <li>
-                    <a href='#'>3.5.4 LINH KIỆN KHÁC</a>
-                  </li>
-
-                </ul>
-              </li>
-
-            </ul>
-          </li>
 
           <li class='has-children'>
-            <a href='#'>4. SẢN PHẨM NÔNG NGHIỆP</a>
+            <a href='#'>4. Điện, đèn điện trang trí,...</a>
             <ul class='modernshop-sb-dropdown is-hidden'>
               <li class='go-back'>
-                <a href='javascript:void(0);'>4. SẢN PHẨM NÔNG NGHIỆP</a>
+                <a href='javascript:void(0);'>4. Điện, đèn điện trang trí,...</a>
               </li>
               <li class='has-children'>
-                <a href='#'>4.1 CÂY TRỒNG CÂY CẢNH</a>
+                <a href='#'>4.1 đèn điện trang trí</a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>4.1 CÂY TRỒNG CÂY CẢNH</a>
+                    <a href='javascript:void(0);'>4.1 đèn điện trang trí</a>
                   </li>
                   <li>
-                    <a href='#'>+ Mai Vàng Tết (đọt xanh)</a>
+                    <a href='#'>+ Đèn lều(tích điện)</a>
                   </li>
                   <li>
-                    <a href='#'>+ Cây Sung Cảnh</a>
+                    <a href='#'>+ Đèn bàn(xài pin):</a>
                   </li>
                   <li>
-                    <a href='#'>+ Cây Sanh Cảnh</a>
+                    <a href='#'>+ Dây đèn trang trí(xài pin)</a>
                   </li>
 
                 </ul>
               </li>
               
                <li class='has-children'>
-                <a href='#'>4.1 CON GIỐNG VẬT NUÔI</a>
+                <a href='#'>4.1 Bộ sạc điện</a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>4.1 CON GIỐNG VẬT NUÔI</a>
+                    <a href='javascript:void(0);'>4.1 Bộ sạc điện</a>
                   </li>
                   <li>
-                    <a href='#'>+ Vịt Xiêm Thu</a>
+                    <a href='#'>+ Bộ sạc điện</a>
+                  </li>
+                  
+                  <li>
+                    <a href='#'>+ Bộ sạc điện</a>
                   </li>
 
                 </ul>
@@ -3327,59 +3248,84 @@ Tư Vấn </a>
 
           <li class='has-children'>
 
-            <a href='#'>5. CÂY THUỐC THẢO DƯỢC THIÊN NHIÊN</a>
+            <a href='#'>5. Giải trí,...</a>
             <ul class='modernshop-sb-dropdown is-hidden'>
               <li class='go-back'>
-                <a href='javascript:void(0);'>5. CÂY THUỐC THẢO DƯỢC THIÊN NHIÊN</a>
+                <a href='javascript:void(0);'>5. Giải trí,...</a>
               </li>
               <li class='has-children'>
-                <a href='#'>5.1 [Sản Phẩm/ Dịch Vụ]</a>
+                <a href='#'>5.1 Loa </a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>5.1 [Sản Phẩm/ Dịch Vụ]</a>
+                    <a href='javascript:void(0);'>5.1 Loa </a>
                   </li>
                   <li>
-                    <a href='javascript:void(0);'>+ Đinh lăng, sâm ta ( tươi/ sấy khô)</a>
+                    <a href='javascript:void(0);'>+ LOA 2 MIC HÁT ẤM:_200K kèm bộ sạc</a>
                   </li>
                   <li>
-                    <a href='javascript:void(0);'>+ Khổ qua rừng (tươi/ sấy khô)</a>
+                    <a href='javascript:void(0);'>+ Loa thùng nhựa: 350k</a>
                   </li>
                   <li>
-                    <a href='#'>+ Lá tía tô (Tươi/ sấy khô)</a>
-                  </li>
-                  <li>
-                    <a href='#'>+ Chuối hột ngâm rượu</a>
-                  </li>
-                  <li>
-                    <a href='#'>+ ...</a>
+                    <a href='#'>+ Loa thùng gỗ: 450k</a>
                   </li>
                 </ul>
               </li>
               <li class='has-children'>
-                <a href='#'>5.2 Tủ thuốc của bạn</a>
+                <a href='#'>5.2 Đàn Ghi ta</a>
                 <ul class='is-hidden'>
                   <li class='go-back'>
-                    <a href='javascript:void(0);'>5.2 Tủ thuốc của bạn</a>
+                    <a href='javascript:void(0);'>5.2 Đàn Ghi ta</a>
                   </li>
                   <li>
-                    <a href='#'>+ Tài liệu chia sẻ</a>
+                    <a href='#'>+ Đàn Ghi ta</a>
                   </li>
                   <li>
                     <a href='javascript:void(0);'>+ ...</a>
                   </li>
                 </ul>
               </li>
+              
+              <li class='has-children'>
+                <a href='#'>5.2 Câu cá</a>
+                <ul class='is-hidden'>
+                  <li class='go-back'>
+                    <a href='javascript:void(0);'>5.2 Câu cá</a>
+                  </li>
+                  <li>
+                    <a href='#'>+ Cần câu cá</a>
+                  </li>
+                  <li>
+                    <a href='javascript:void(0);'>+ ...</a>
+                  </li>
+                </ul>
+              </li>
+              
             </ul>
           </li>
 
           <li class='has-children'>
-            <a href='#'>6. TÀI LIỆU CHIA SẺ / FILE</a>
+            <a href='#'>6. Combo cắm trại ưu đãi,...</a>
             <ul class='modernshop-sb-dropdown is-hidden'>
               <li class='go-back'>
-                <a href='javascript:void(0);'>6. TÀI LIỆU CHIA SẺ / FILE</a>
+                <a href='javascript:void(0);'>6. Combo cắm trại ưu đãi,...</a>
               </li>
               <li>
-                <a href='#'>+ Updating</a>
+                <a href='#'>+ Combo Lều 2 người + 2 túi ngủ + đèn lều + tấm cách nhiệt</a>
+              </li>
+              <li>
+                <a href='#'>+ Combo Lếu 4 người + 4 túi ngủ + đèn lều + 2 tấm cách nhiệt</a>
+              </li>
+              <li>
+                <a href='#'>+ Combo Lếu 5 người + 5 túi ngủ + đèn lều + 3 tấm cách nhiệt</a>
+              </li>
+              <li>
+                <a href='#'>+ Combo Lều 6 người + 6 túi ngủ + đèn lều + 3 tấm cách nhiệt</a>
+              </li>
+              <li>
+                <a href='#'>+ Combo 2 ghế + 1 bàn</a>
+              </li>
+              <li>
+                <a href='#'>+ Combo 4 ghế + 1 bàn</a>
               </li>
             </ul>
           </li>
@@ -3419,7 +3365,7 @@ Tư Vấn </a>
       <b:include name='content'/>
     </b:includable>
      <b:includable id='content'>
-      <b:if cond='data:blog.url == data:blog.homepageUrl path &quot;/p/thanh-toan.html&quot;'>
+      <b:if cond='data:blog.url == data:blog.homepageUrl path &quot;/p/thanh-toan_20.html&quot;'>
       
       <!-- =======================dathang============================ -->
       <![CDATA[  
@@ -3427,7 +3373,7 @@ Tư Vấn </a>
 
                                         <div class="vzs-thanh-toan" style="color:blue;  width:100%; hight:auto">
                                             <div class="vzs-logo-d " width="25%" hight="auto" style="float:left;">
-                                                <a class=' vzs-logo' href="/"><img src="https://drive.google.com/uc?id=186wknKqdikbTMlSxUSVP2x393Bw6lRWh" width="180px" height="auto"></a>
+                                                <a class=' vzs-logo' href="/"><img src="https://github.com/luongthehien93/campingtoday/blob/main/img/logo/campingtoday_logo_qr_jpg.jpg?raw=true" width="180px" height="auto"></a>
                                             </div>
                                             <div class="vzs-thanh-toan-1" style="vertical-align: middle; padding: 3% 0% 3% 10%; ">
 
@@ -3435,20 +3381,17 @@ Tư Vấn </a>
 
                                                     <div class="col-12 ">
 
-                                                        <h2 style="font-size: 36px; color:blue"> <strong>Cửa Hàng Dịch
-                                                                Vụ Công Nghệ
-                                                                Tổng
-                                                                Hợp
-                                                                VietZipStore </strong></h2>
+                                                        <h2 style="font-size: 36px; color:blue"> <strong> Camping Today - Dịch vụ cắm trại, cho thuê lều cắm trại
+                                                                 </strong></h2>
 
                                                     </div>
                                                     <div class="col-10 col-sm-10 col-md-5">
                                                         <p style="margin-bottom: 0.5rem;"><i class="bi bi-geo-alt" style="color:#2196f3; margin-right:1%"></i>
-                                                            <b>Address:</b> Đà Nẵng, Quảng Nam, Việt Nam</p>
+                                                            <b>Address:</b> Địa chỉ: số 31/12 Nguyễn Công Trứ, P8, TP Đà Lạt</p>
                                                     </div>
                                                     <div class="col-10 col-sm-10 col-md-5">
                                                         <p style="margin-bottom: 0.5rem;"><i class="bi bi-envelope-check" style="color:#2196f3;  margin-right:1%"></i>
-                                                            <b>Email:</b> vietzipstore@gmail.com
+                                                            <b>Email:</b> haitran0308@gmail.com
                                                         </p>
                                                     </div>
                                                     <div class="col-10 col-sm-10 col-md-5">
@@ -3458,13 +3401,13 @@ Tư Vấn </a>
 
                                                     <div class="col-10 col-sm-10 col-md-5">
                                                         <p style="margin-bottom: 0.5rem;"><i class="lnr lnr-earth" style="color:#2196f3;  margin-right:1%"></i>
-                                                            <b>Website:</b> www.vietzipstore.com
+                                                            <b>Website:</b> www.camptoday.*.com
                                                         </p>
                                                     </div>
                                                     
                                                     <div class="col-10 col-sm-10 col-md-5">
                                                         <p style="margin-bottom: 0.5rem;"><i class="bi bi-credit-card" style="color:#2196f3;  margin-right:1%"></i>
-                                                            <b>Payment:</b> 1111.79.2222.79 (VPBank)</p>
+                                                            <b>Payment:</b> 0041001130048 (Vietcombank)</p>
                                                     </div>
 
                                                     <div class="col-10 col-sm-10 col-md-5">
@@ -3721,22 +3664,22 @@ Thanh toán khi nhận hàng (COD)</label>
               <table>
                 <tr>
                   <th>Tên ngân hàng:</th>
-                  <td>Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)</td>
+                  <td>Vietcombank</td>
                 </tr>
 
                 <tr>
                   <th>Số tài khoản:</th>
-                  <td>1111 79 2222 79</td>
+                  <td>0041001130048</td>
                 </tr>
 
                 <tr>
                   <th>Chi nhánh:</th>
-                  <td>Đà Nẵng</td>
+                  <td>Lâm Đồng</td>
                 </tr>
 
                 <tr>
                   <th>Chủ tài khoản:</th>
-                  <td>LUONG THE HIEN</td>
+                  <td>Trần Hải</td>
                 </tr>
 
               </table>
@@ -3825,7 +3768,7 @@ Thanh toán khi nhận hàng (COD)</label>
             </table>
             <div class='cartbuttons'>
               <a class='simpleCart_empty' href='javascript:;'>Xóa hết</a>
-              <a class='simpleCart_checkout_btn' href='/p/thanh-toan.html'>Đặt hàng</a>
+              <a class='simpleCart_checkout_btn' href='/p/thanh-toan_20.html'>Đặt hàng</a>
             </div>
             <div class='modernshop-pemberitahuan'>
               <div class='notifikasi_shop' style='display:none'>
@@ -3856,7 +3799,7 @@ Thanh toán khi nhận hàng (COD)</label>
       
         &lt;div class=&#39;item&#39;&gt;
             &lt;div class=&#39;img-fill&#39;&gt;&lt;a href=&#39;#&#39;&gt;
-&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingdalat/blob/main/img/banner/campingdalat_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
+&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingtoday/blob/main/img/banner/campingtoday_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
       
@@ -3864,7 +3807,7 @@ Thanh toán khi nhận hàng (COD)</label>
       
         &lt;div class=&#39;item&#39;&gt;
             &lt;div class=&#39;img-fill&#39;&gt;&lt;a href=&#39;#&#39;&gt;
-&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingdalat/blob/main/img/banner/campingdalat_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
+&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingtoday/blob/main/img/banner/campingtoday_bacgroud_01.jpg?raw=true &#39;/&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
       
@@ -3872,7 +3815,7 @@ Thanh toán khi nhận hàng (COD)</label>
       
         &lt;div class=&#39;item&#39;&gt;
             &lt;div class=&#39;img-fill&#39;&gt;&lt;a href=&#39;#&#39;&gt;
-&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingdalat/blob/main/img/banner/campingdalat_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
+&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingtoday/blob/main/img/banner/campingtoday_bacgroud_01.jpg?raw=true &#39;/&gt;&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
       
@@ -3888,13 +3831,13 @@ Thanh toán khi nhận hàng (COD)</label>
   <b:widget id='HTML2' locked='false' title='Right slider' type='HTML' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;div class=&#39;box-right-img margin-bottom&#39;&gt;
-    &lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingdalat/blob/main/img/banner/campingdalat_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
+    &lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;&#39; src=&#39; &#39;/&gt;&lt;/a&gt;
 &lt;/div&gt;
       
 
       
 &lt;div class=&#39;box-right-img&#39;&gt;
-    &lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;&#39; src=&#39;https://github.com/luongthehien93/campingdalat/blob/main/img/banner/campingdalat_bacgroud_01.jpg?raw=true&#39;/&gt;&lt;/a&gt;
+    &lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;&#39; src=&#39; &#39;/&gt;&lt;/a&gt;
 &lt;/div&gt;</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
@@ -3917,7 +3860,7 @@ Thanh toán khi nhận hàng (COD)</label>
 &lt;/div&gt;
 &lt;div class=&#39;boxx-info&#39;&gt;
 &lt;span id=&#39;box-des&#39;&gt;TỔNG ĐÀI TƯ VẤN HỖ TRỢ KHÁCH HÀNG 24/7 &lt;/span&gt;
-&lt;span id=&#39;box-span&#39;&gt;Ms Hương: (+84) 093.202.20.59 (Tư Vấn) &lt;/span&gt;&lt;br /&gt;
+&lt;span id=&#39;box-span&#39;&gt;Ms Hương: (+84) 036.830.20.55 (Tư Vấn) &lt;/span&gt;&lt;br /&gt;
 &lt;span id=&#39;box-span&#39;&gt;Mr Hải: (+84) 093.202.20.59  (Kỹ Thuật) &lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4043,53 +3986,7 @@ An Toàn, Vui Vẻ, Bảo Mật
   <div class='main-wrapper'>
 
     <!-- danhmuc dịchvu -->
-    <b:section class='bkslayout' cond='data:view.isHomepage' id='tab-product02' name='Tab Product'>
-      <b:widget id='LinkList2' locked='false' title='DỊCH VỤ' type='LinkList' version='2' visible='true'>
-        <b:widget-settings>
-          <b:widget-setting name='link-3'>dich-vu</b:widget-setting>
-          <b:widget-setting name='sorting'>NONE</b:widget-setting>
-          <b:widget-setting name='text-1'>CÔNG NGHỆ VÀ GIẢI PHÁP</b:widget-setting>
-          <b:widget-setting name='link-1'>dich-vu-cong-nghe-va-giai-phap</b:widget-setting>
-          <b:widget-setting name='text-0'>THI CÔNG LẮP ĐẶT</b:widget-setting>
-          <b:widget-setting name='link-2'>dich-vu-marketing-quang-cao</b:widget-setting>
-          <b:widget-setting name='text-3'/>
-          <b:widget-setting name='link-0'>dich-vu-thi-cong</b:widget-setting>
-          <b:widget-setting name='text-2'>MARKETING QUẢNG CÁO</b:widget-setting>
-        </b:widget-settings>
-        <b:includable id='main'>
-          <b:include name='content'/>
-        </b:includable>
-        <b:includable id='content'>
-          <b:class name='tab-wrapper tab-recent'/>
-          <ul class='tab-menu recent-tab'>
-            <h2>
-              <data:title/>
-            </h2>
-            <b:loop index='i' values='data:links' var='link'>
-              <li>
-                <b:if cond='data:i == 0'>
-                  <b:class name='active'/>
-                </b:if>
-                <data:link.name/>
-              </li>
-            </b:loop>
-          </ul>
-
-          <div class='tab-content rec-tab'>
-            <b:loop index='i' values='data:links' var='link'>
-              <div class='recent-wrapper'>
-                <div class='recent-section'>
-                  <div class='widget-content'>
-                    <data:link.target/>
-/recent-label
-                  </div>
-                </div>
-              </div>
-            </b:loop>
-          </div>
-        </b:includable>
-      </b:widget>
-    </b:section>
+    
     <!--  danhmucdichvu  -->
 
 
@@ -4128,7 +4025,7 @@ An Toàn, Vui Vẻ, Bảo Mật
           <b:if cond='data:view.isHomepage'>
             <div class='title-home'>
               <h3>
-                <a href='/search/'>SẢN PHẨM</a>
+                <a href='/search/'>SẢN PHẨM, DỊCH VỤ</a>
               </h3>
             </div>
           </b:if>
@@ -4951,16 +4848,16 @@ Thêm vào giỏ</span>
 <!--  -->
 <!--danhmucsanpham theosp  -->
 <b:section class='bkslayout' cond='data:view.isHomepage' id='tab-product' name='Tab Product'>
-  <b:widget id='LinkList4' locked='false' title='LỀU CẮM TRẠI' type='LinkList' version='2' visible='true'>
+  <b:widget id='LinkList4' locked='false' title='LỀU CẮM TRẠI, TÚI NGỦ,...' type='LinkList' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='shownum'>10</b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-      <b:widget-setting name='text-1'>4 Người</b:widget-setting>
-      <b:widget-setting name='link-1'>leu-4</b:widget-setting>
-      <b:widget-setting name='text-0'>2 Người</b:widget-setting>
-      <b:widget-setting name='link-2'>leu-6</b:widget-setting>
-      <b:widget-setting name='link-0'>leu-2</b:widget-setting>
-      <b:widget-setting name='text-2'>6 Người</b:widget-setting>
+      <b:widget-setting name='text-1'>Túi ngủ</b:widget-setting>
+      <b:widget-setting name='link-1'>tui-ngu</b:widget-setting>
+      <b:widget-setting name='text-0'>Lều cắm trại</b:widget-setting>
+      <b:widget-setting name='link-2'>khac</b:widget-setting>
+      <b:widget-setting name='link-0'>leu</b:widget-setting>
+      <b:widget-setting name='text-2'>Khác</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
 <b:include name='content'/>
@@ -4995,16 +4892,14 @@ Thêm vào giỏ</span>
 </div>
 </b:includable>
   </b:widget>
-  <b:widget id='LinkList3' locked='false' title='Túi Ngủ Du Lịch' type='LinkList' version='2' visible='true'>
+  <b:widget id='LinkList3' locked='false' title='Bàn, ghế cắm trại,...' type='LinkList' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='shownum'>10</b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-      <b:widget-setting name='text-1'>4 Người</b:widget-setting>
-      <b:widget-setting name='link-1'>tui-4</b:widget-setting>
-      <b:widget-setting name='text-0'>2 Người</b:widget-setting>
-      <b:widget-setting name='link-2'>tui-6</b:widget-setting>
-      <b:widget-setting name='link-0'>tui-2</b:widget-setting>
-      <b:widget-setting name='text-2'>6 Người</b:widget-setting>
+      <b:widget-setting name='text-1'>Ghế xếp cắm trại</b:widget-setting>
+      <b:widget-setting name='link-1'>ghe</b:widget-setting>
+      <b:widget-setting name='text-0'>Bàn xếp cắm trại</b:widget-setting>
+      <b:widget-setting name='link-0'>ban</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
 <b:if cond='data:widget.sectionId == &quot;tab-product&quot;'>
@@ -5799,6 +5694,183 @@ Thêm vào giỏ</span>
 </script>
 </b:includable>
   </b:widget>
+  
+  <b:widget id='LinkList5' locked='false' title='Dụng cụ bếp, nấu ăn,...' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='shownum'>10</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-0'>Dụng cụ bếp,</b:widget-setting>
+      <b:widget-setting name='link-0'>bep</b:widget-setting>
+      <b:widget-setting name='text-1'>Nấu ăn, thực đơn</b:widget-setting>
+      <b:widget-setting name='link-1'>nau</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+<b:class name='tab-wrapper tab-recent'/>
+<ul class='tab-menu recent-tab'>
+<h2>
+<data:title/>
+</h2>
+<b:loop index='i' values='data:links' var='link'>
+<li>
+<b:if cond='data:i == 0'>
+<b:class name='active'/>
+</b:if>
+<data:link.name/>
+</li>
+</b:loop>
+</ul>
+
+<div class='tab-content rec-tab'>
+<b:loop index='i' values='data:links' var='link'>
+<div class='recent-wrapper'>
+<div class='recent-section'>
+<div class='widget-content'>
+<data:link.target/>
+/recent-label
+</div>
+</div>
+</div>
+</b:loop>
+</div>
+</b:includable>
+  </b:widget>
+  
+  <b:widget id='LinkList6' locked='false' title='Điện, đèn điện trang trí,...' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='shownum'>10</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-0'>Đèn trang trí</b:widget-setting>
+      <b:widget-setting name='link-0'>den</b:widget-setting>
+      <b:widget-setting name='text-1'>Bộ sạc điện</b:widget-setting>
+      <b:widget-setting name='link-1'>sac-dien</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+<b:class name='tab-wrapper tab-recent'/>
+<ul class='tab-menu recent-tab'>
+<h2>
+<data:title/>
+</h2>
+<b:loop index='i' values='data:links' var='link'>
+<li>
+<b:if cond='data:i == 0'>
+<b:class name='active'/>
+</b:if>
+<data:link.name/>
+</li>
+</b:loop>
+</ul>
+
+<div class='tab-content rec-tab'>
+<b:loop index='i' values='data:links' var='link'>
+<div class='recent-wrapper'>
+<div class='recent-section'>
+<div class='widget-content'>
+<data:link.target/>
+/recent-label
+</div>
+</div>
+</div>
+</b:loop>
+</div>
+</b:includable>
+  </b:widget>
+  
+  <b:widget id='LinkList7' locked='false' title='Dụng cụ giải trí,...' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='shownum'>10</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-0'>Loa</b:widget-setting>
+      <b:widget-setting name='link-0'>loa</b:widget-setting>
+      <b:widget-setting name='text-1'>Đàn ghi ta</b:widget-setting>
+      <b:widget-setting name='link-1'>ghi-ta</b:widget-setting>
+      <b:widget-setting name='text-1'>Cần câu cá</b:widget-setting>
+      <b:widget-setting name='link-1'>can-cau</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+<b:class name='tab-wrapper tab-recent'/>
+<ul class='tab-menu recent-tab'>
+<h2>
+<data:title/>
+</h2>
+<b:loop index='i' values='data:links' var='link'>
+<li>
+<b:if cond='data:i == 0'>
+<b:class name='active'/>
+</b:if>
+<data:link.name/>
+</li>
+</b:loop>
+</ul>
+
+<div class='tab-content rec-tab'>
+<b:loop index='i' values='data:links' var='link'>
+<div class='recent-wrapper'>
+<div class='recent-section'>
+<div class='widget-content'>
+<data:link.target/>
+/recent-label
+</div>
+</div>
+</div>
+</b:loop>
+</div>
+</b:includable>
+  </b:widget>
+  
+  <b:widget id='LinkList8' locked='false' title='Combo cắm trại ưu đãi,...' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='shownum'>10</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='text-0'>Combo lều, túi</b:widget-setting>
+      <b:widget-setting name='link-0'>combo-leu-tui</b:widget-setting>
+      <b:widget-setting name='text-1'>Combo bàn ghế</b:widget-setting>
+      <b:widget-setting name='link-1'>combo-ban-ghe</b:widget-setting>
+      <b:widget-setting name='text-1'>Combo bếp nấu</b:widget-setting>
+      <b:widget-setting name='link-1'>combo-bep-nau</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+<b:class name='tab-wrapper tab-recent'/>
+<ul class='tab-menu recent-tab'>
+<h2>
+<data:title/>
+</h2>
+<b:loop index='i' values='data:links' var='link'>
+<li>
+<b:if cond='data:i == 0'>
+<b:class name='active'/>
+</b:if>
+<data:link.name/>
+</li>
+</b:loop>
+</ul>
+
+<div class='tab-content rec-tab'>
+<b:loop index='i' values='data:links' var='link'>
+<div class='recent-wrapper'>
+<div class='recent-section'>
+<div class='widget-content'>
+<data:link.target/>
+/recent-label
+</div>
+</div>
+</div>
+</b:loop>
+</div>
+</b:includable>
+  </b:widget>
+  
   <b:widget id='LinkList9' locked='false' title='TIN TỨC KHUYẾN MÃI' type='LinkList' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
@@ -5892,7 +5964,7 @@ Thêm vào giỏ</span>
 </div>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML8' locked='false' title='DỊCH VỤ VÀ SẢN PHẨM' type='HTML' visible='true'>
+  <b:widget id='HTML8' locked='false' title='DỊCH VỤ VÀ SẢN PHẨM' type='HTML' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Lều cắm trại&lt;/a&gt;&lt;/li&gt;
@@ -5909,7 +5981,7 @@ Thêm vào giỏ</span>
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML5' locked='false' title='DỊCH VỤ VÀ SẢN PHẨM' type='HTML' visible='true'>
+  <b:widget id='HTML5' locked='false' title='DỊCH VỤ VÀ SẢN PHẨM' type='HTML' version='2' visible='true'>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Lều cắm trại&lt;/a&gt;&lt;/li&gt;
@@ -5951,7 +6023,7 @@ Thêm vào giỏ</span>
     <b:widget-settings>
       <b:widget-setting name='content'>&lt;div class=&#39;content-pay&#39;&gt;
               
-               &lt;a href=	&#39;/p/thanh-toan.html&#39; itemprop=&#39;url&#39;&gt;
+               &lt;a href=	&#39;/p/thanh-toan_20.html&#39; itemprop=&#39;url&#39;&gt;
     &lt;div id=&#39;pay-left&#39;&gt;
         &lt;h2&gt;
         
@@ -5961,7 +6033,7 @@ Thêm vào giỏ</span>
         &lt;img alt=&#39;&#39; src=&#39;http://1.bp.blogspot.com/-5kiqtGKwvJ0/XeuP5cWKaNI/AAAAAAAABaE/f6xbihlY_OQpONIlckiGjmOyNE-CWYSrgCLcBGAsYHQ/s1600/pdata.png&#39; /&gt;
     &lt;/div&gt; &lt;/a&gt; 
     
-     &lt;a href=	&#39;/p/thanh-toan.html&#39; itemprop=&#39;url&#39;&gt;
+     &lt;a href=	&#39;/p/thanh-toan_20.html&#39; itemprop=&#39;url&#39;&gt;
     &lt;div id=&#39;pay-right&#39;&gt;
         &lt;h2&gt;Liên Kết&lt;/h2&gt;
         
@@ -5991,6 +6063,8 @@ Thêm vào giỏ</span>
 
 
 Camping Today- Dịch Vụ Cắm Trại
+Cho thuê lều cắm trại, lều du lịch, lều dã ngoại, và phụ kiện cắm trại đi kèm. 
+Cho thuê lều trại toàn quốc.
 
 
 //----------------[CONTACT]----------------
@@ -5998,20 +6072,19 @@ Liên Hệ:
 SDT/ Zalo: 093.202.20.59
 Email:     
 Website:   
-Facebook:  http://www.facebook.com/campingtodayhcm
-Youtube:   http://www.youtube.com/c/campingtodayhcm
+Facebook:  http://www.facebook.com/Campdalat
+Youtube:   http://www.youtube.com/c/UCaa8xAkp3dFzQU3DP0RgqqQ
 
 [++
-Facebook Messenger:  https://www.messenger.com/t/campingtodayhcm
+Facebook Messenger:  https://www.messenger.com/t/Campdalat
 Zalo Messenger: https://zalo.me/0932022059
-Youtube:   http://www.youtube.com/c/vietzipstore
+Youtube:   http://www.youtube.com/c/campingtoday
 Google Maps: https://goo.gl/maps/xrGAua5ESSUeusLn9
 Paypal: https://paypal.me/
 ]
 //----------------[CONTACT]----------------
 
 
-//----------------[Camping ]----------------
 &lt;/pre&gt;
     &lt;/div&gt;
     
@@ -6060,7 +6133,7 @@ Paypal: https://paypal.me/
     &lt;div class=&#39;credit_media&#39;&gt;
         &lt;ul&gt;
             &lt;span&gt;Liên kết:&lt;/span&gt;
-            &lt;li&gt;&lt;a href=&#39;https://www.messenger.com/t/campingtodayhcm&#39; rel=&#39;nofollow&#39; target=&#39;_blank&#39; title=&#39;&#39;&gt;&lt;i class=&#39;fab fa-facebook&#39;/&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#39;https://www.messenger.com/t/Campdalat&#39; rel=&#39;nofollow&#39; target=&#39;_blank&#39; title=&#39;&#39;&gt;&lt;i class=&#39;fab fa-facebook&#39;/&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&#39;https://zalo.me/0932022059&#39; rel=&#39;nofollow&#39; target=&#39;_blank&#39; title=&#39;&#39;&gt;&lt;i class=&#39;far fa-comment-dots&#39;/&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&#39;http://www.youtube.com/c/campingtodayhcm&#39; rel=&#39;nofollow&#39; target=&#39;_blank&#39; title=&#39;&#39;&gt;&lt;i class=&#39;fab fa-youtube&#39;/&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;li&gt;&lt;a href=&#39;https://goo.gl/maps/xrGAua5ESSUeusLn9&#39; rel=&#39;nofollow&#39; target=&#39;_blank&#39; title=&#39;&#39;&gt;&lt;i class=&#39;fas fa-map-marked-alt&#39;/&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
@@ -6114,7 +6187,7 @@ Paypal: https://paypal.me/
 
     <!-- js add -->
     <!--===js hiển thị thời gian ===================================================-->
-    <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore@main/css-js/startDayTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/luongthehien93/vietzipstore.com@main/css-js/startDayTime.js"></script>
     <!--  -->
      <!-- <div>
             <span id="timeDay"></span>
@@ -6137,21 +6210,21 @@ Paypal: https://paypal.me/
         <div class="flat-icon-support">
             <ul>
                 <li>
-                    <a target="_blank" href="http://www.messenger.com/t/vietzipstore">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chat-fb.svg" alt="btn-ho-tro-fb">
+                    <a target="_blank" href="http://www.messenger.com/t/Campdalat">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-fb.svg" alt="btn-ho-tro-fb">
                     </a>
 
-                    <a target="_blank" href="http://www.zalo.me/0868886905">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chat-zalo.svg" alt="btn-ho-tro-zalo">
+                    <a target="_blank" href="http://www.zalo.me/0932022059">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chat-zalo.svg" alt="btn-ho-tro-zalo">
                     </a>
 
                     <!-- <a href="javascript:void(0);" class="show-popup-call-center"> -->
                     <a href="tel:84932022059" class="show-popup-call-center">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/goi-mien-phi.svg" alt="btn-ho-tro-hotline">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/goi-mien-phi.svg" alt="btn-ho-tro-hotline">
                     </a>
 
-                    <a href="https://goo.gl/maps/Dt5hmMprVaHtbRAy6" class="show-popup-support-local">
-                        <img src="https://github.com/luongthehien93/vietzipstore/raw/main/img/icon/chi-duong.svg" alt="btn-ho-tro-map">
+                    <a href="https://goo.gl/maps/2Ju41vsUS7ijc2vh7" class="show-popup-support-local">
+                        <img src="https://github.com/luongthehien93/vietzipstore.com/raw/main/img/icon/chi-duong.svg" alt="btn-ho-tro-map">
                     </a>
                 </li>
             </ul>
@@ -6162,20 +6235,20 @@ Paypal: https://paypal.me/
         <ul class="list-footer-fixed">
             <li>
                 <a href="javascript:void(0)" class="menu-modernshop-trigger dropdown-is-active">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-menu-300.png?raw=true" alt="menu">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-menu-300.png?raw=true" alt="menu">
                     <span>Menu</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.messenger.com/t/vietzipstore">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-facebook-300.png?raw=true" alt="icon-mobile-fb">
+                <a href="http://www.messenger.com/t/Campdalat">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-facebook-300.png?raw=true" alt="icon-mobile-fb">
                     <span>Chat FB</span>
                 </a>
             </li>
 
             <li>
-                <a href="http://www.zalo.me/0868886905">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-zalo-300.png?raw=true" alt="icon-mobile-zalo">
+                <a href="http://www.zalo.me/0932022059">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-zalo-300.png?raw=true" alt="icon-mobile-zalo">
                     <span>Chat Zalo</span>
                 </a>
             </li>
@@ -6183,15 +6256,15 @@ Paypal: https://paypal.me/
             <li>
                 <!-- <a href="javascript:void(0);" class="show-popup-support-hotline"> -->
                 <a href="tel:84932022059" class="show-popup-support-hotline">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-phone-gif.gif?raw=true" class="icon-phone-footer animated infinite tada delay-3s" alt="icon-phone">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-phone-gif.gif?raw=true" class="icon-phone-footer animated infinite tada delay-3s" alt="icon-phone">
                     <span>Gọi điện</span>
                 </a>
             </li>
 
             <li>
                 <!-- <a href="javascript:void(0);" class="show-popup-support-local"> -->
-                <a href="https://goo.gl/maps/Dt5hmMprVaHtbRAy6" class="show-popup-support-local">
-                    <img src="https://github.com/luongthehien93/vietzipstore/blob/main/img/icon/icon-map-64.png?raw=true" alt="icon-mobile-map">
+                <a href="https://goo.gl/maps/2Ju41vsUS7ijc2vh7" class="show-popup-support-local">
+                    <img src="https://github.com/luongthehien93/vietzipstore.com/blob/main/img/icon/icon-map-64.png?raw=true" alt="icon-mobile-map">
                     <span>Chỉ đường</span>
                 </a>
             </li>
